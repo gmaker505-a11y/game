@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111116">
+  <meta name="description" content="LAST CALL — an original animated dark comedy.">
+  <title>LAST CALL — Animated Series</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div><p class="eyebrow">AN ORIGINAL ANIMATED SERIES</p><h1>LAST <span>CALL</span></h1></div>
+      <span class="season">SEASON 1 · EP 01</span>
+    </header>
+    <section class="screen" aria-label="Animated episode">
+      <canvas id="stage" width="960" height="540" role="img" aria-label="Animated night shift at the afterlife call centre"></canvas>
+      <div class="broadcast"><span class="live-dot"></span> NIGHT SHIFT FEED</div>
+      <div class="subtitle" id="subtitle" aria-live="polite">The dead have questions. Management has a spreadsheet.</div>
+    </section>
+    <section class="episode-info">
+      <div><p class="eyebrow">EPISODE 01</p><h2>“Your Call Is Important to Us”</h2><p class="synopsis">At the afterlife call centre, two exhausted employees discover the universe has put eternity on hold.</p></div>
+      <div class="rating">DARK<br>COMEDY</div>
+    </section>
+    <section class="controls" aria-label="Episode controls">
+      <button id="play" class="primary" type="button">▶ Play episode</button>
+      <button id="next" type="button">Next line ↗</button>
+      <button id="voice" type="button" aria-pressed="true">🔊 Voice on</button>
+      <button id="captions" type="button" aria-pressed="true">CC Captions</button>
+    </section>
+    <section class="transcript"><h3>ON THIS SHIFT</h3><div id="transcript"></div></section>
+    <footer><span>LAST CALL © — Fictional characters. Realistically terrible management.</span><span>Built for phones and desktop</span></footer>
+  </main>
+  <script src="episodes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
